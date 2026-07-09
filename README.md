@@ -1,2 +1,2 @@
 # Terraform
-This repo contains the terraform files I have currently bulit.
+Terraform files for AWS infrastructure consting of loadbalanced EC2 hosted app. 
