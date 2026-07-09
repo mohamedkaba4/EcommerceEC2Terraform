@@ -1,0 +1,9 @@
+environment            = "staging"
+instance_type          = "t3.micro"
+ami_id                 = "ami-0987654321staging" # Swap with your staging or test AMI ID
+ssl_certificate_arn    = "arn:aws:acm:us-east-1:123456789012:certificate/xxxx-xxxx" #Insert cert
+domain_name            = "e-commerce.mavencrest.site"
+asg_min_size           = 1
+asg_desired_capacity   = 1
+asg_max_size           = 2
+cpu_target_utilization = 75.0

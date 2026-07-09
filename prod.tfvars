@@ -1,0 +1,9 @@
+environment            = "prod"
+instance_type          = "t3.small"
+ami_id                 = "ami-0123456789production" # Swap with your real Custom Production AMI ID
+ssl_certificate_arn    = "arn:aws:acm:us-east-1:123456789012:certificate/xxxx-xxxx" #Insert ACM ARN
+domain_name            = "e-commerce.mavencrest.site"
+asg_min_size           = 2
+asg_desired_capacity   = 2
+asg_max_size           = 5
+cpu_target_utilization = 60.0

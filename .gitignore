@@ -1,0 +1,14 @@
+# Local terraform directories (holds plugins)
+.terraform/
+
+# Hide local state files (These track live AWS resource IDs and secrets)
+*.tfstate
+*.tfstate.backup
+
+# Hide crash logs
+crash.log
+crash.*.log
+
+# Ignore override files
+override.tf
+override.tf.json
