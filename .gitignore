@@ -14,3 +14,6 @@ override.tf
 override.tf.json
 
 .awscreds
+staging.tfvars
+prod.tfvars
+
