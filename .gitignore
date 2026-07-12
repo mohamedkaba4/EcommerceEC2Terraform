@@ -12,3 +12,5 @@ crash.*.log
 # Ignore override files
 override.tf
 override.tf.json
+
+.awscreds

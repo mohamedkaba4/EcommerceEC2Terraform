@@ -25,6 +25,18 @@ variable "ami_id" {
   description = "The custom AMI ID with Next.js and Nginx pre-installed"
 }
 
+variable "iam_role_name" {
+  type        = string
+  default     = "NeonSsmRead"
+  description = "The role that reads Neon db string"
+}
+
+variable "ssm_parameter_name" {
+  type        = string
+  default     = "/nextjs/prod/DATABASE_URL"
+  description = "The path to the Neon DB connection string in SSM Parameter Store"
+}
+
 variable "ssl_certificate_arn" {
   type        = string
   description = "The ARN of your SSL certificate managed in AWS Certificate Manager (ACM)"
